@@ -1,0 +1,51 @@
+COMANDOS GIT:
+
+#iniciando um repositório
+git init
+
+#configurando usuário global
+git config --global user.name "Fulano de Tal"
+git config --global user.email email@mail.com
+
+#adicionando repositório
+git remote add local/URL/endereco_pasta
+
+#linkando e adicionando repositorio do Github ou outro repositório remoto
+git remote add origin URL
+
+#clonando projetos do Github ou repositorio remoto
+git clone https://github.com/mlazza/movies.git
+
+
+COMANDOS MAIS UTILIZADOS
+
+#puxando os últimos dados do repositório/Github e atualizando o projeto
+git pull origin master
+
+#verifica o estado de alteracao dos arquivos do repositorio
+git status
+
+#adiciona o arquivo para ser trackeado
+git add nome_do_arquivo 
+
+#adiciona todos arquivos para trackear
+git add . 
+
+#comita os arquivos alterados
+git commit -m "mensagem de alteração" 
+
+#enviando os arquivos modificados
+git push -u origin master
+
+#verifica o histórico de modificações/commits
+git log
+git log --oneline #historico resumido
+git log -p        #historico detalhado
+git log --graph   #com a linha do tempo
+
+OUTROS ASSUNTOS:
+
+Branches, .gitignore
+
+
+
